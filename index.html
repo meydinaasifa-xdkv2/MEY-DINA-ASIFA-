@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Siswa - Mey Dina Asifa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header & Navigasi -->
+  <header>
+    <div class="container nav-container">
+      <a href="#hero" class="logo">Porto<span>Siswa</span></a>
+      <nav id="nav-menu">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">Tentang Saya</a></li>
+          <li><a href="#profile">Profil</a></li>
+          <li><a href="#goals">Cita-Cita</a></li>
+          <li><a href="#edit-section" class="btn-nav-edit">Edit Data</a></li>
+        </ul>
+      </nav>
+      <div class="nav-right">
+        <button id="theme-toggle" aria-label="Toggle Theme">🌙</button>
+        <button id="hamburger" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="container hero-container">
+      <div class="hero-avatar">
+        <img id="display-hero-img" src="https://via.placeholder.com/180" alt="Foto Profil">
+      </div>
+      <div class="hero-content">
+        <span class="badge" id="display-hero-kelas">X DKV 2</span>
+        <h1>Halo, Saya <span id="display-hero-nama">Mey Dina Asifa</span></h1>
+        <p class="nickname">Bisa dipanggil <strong><span id="display-hero-panggilan">Memey</span></strong></p>
+        <p class="jurusan"><span id="display-hero-jurusan">Desain Komunikasi Visual</span> - <span id="display-hero-konsentrasi">KONSENTRASI/KOMPETENSI KEAHLIAN</span></p>
+        <p class="tagline">"<span id="display-hero-motto">MOTTO/TAGLINE</span>"</p>
+        <div class="hero-buttons">
+          <a href="#about" class="btn btn-primary">Tentang Saya</a>
+          <a href="#profile" class="btn btn-secondary">Lihat Profil</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tentang Saya Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">Tentang Saya</h2>
+      <div class="card about-card">
+        <p id="display-about-tentang">TENTANG SAYA</p>
+        <hr>
+        <p id="display-about-deskripsi">DESKRIPSI DIRI</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Profil & Minat Section -->
+  <section id="profile" class="section bg-light">
+    <div class="container">
+      <h2 class="section-title">Profil & Minat</h2>
+      <div class="grid-profile">
+        <div class="card">
+          <h3>📚 Informasi Sekolah</h3>
+          <ul>
+            <li><strong>Kelas:</strong> <span id="display-prof-kelas">X DKV 2</span></li>
+            <li><strong>Jurusan:</strong> <span id="display-prof-jurusan">Desain Komunikasi Visual</span></li>
+            <li><strong>Konsentrasi:</strong> <span id="display-prof-konsentrasi">KONSENTRASI/KOMPETENSI KEAHLIAN</span></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>🌟 Minat & Hobi</h3>
+          <ul>
+            <li><strong>Minat:</strong> <span id="display-prof-minat">MINAT</span></li>
+            <li><strong>Hobi:</strong> <span id="display-prof-hobi">Volly</span></li>
+            <li><strong>Bidang Dipelajari:</strong> <span id="display-prof-bidang">Komputer</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cita-Cita Section -->
+  <section id="goals" class="section">
+    <div class="container">
+      <h2 class="section-title">Impian & Cita-Cita</h2>
+      <div class="card goals-card">
+        <div class="goals-icon">🎯</div>
+        <h3>Ingin Menjadi <span id="display-goals-citacita">Guru</span></h3>
+        <p>Terus belajar dan berkembang di kelas X untuk meraih cita-cita di masa depan!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Edit Profil Interaktif -->
+  <section id="edit-section" class="section bg-light">
+    <div class="container">
+      <h2 class="section-title">Edit Profil (Live Preview)</h2>
+      
+      <div id="toast" class="toast">Data berhasil disimpan!</div>
+
+      <form id="profile-form" class="card form-card">
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="input-nama">Nama Lengkap</label>
+            <input type="text" id="input-nama" value="Mey Dina Asifa">
+          </div>
+          <div class="form-group">
+            <label for="input-panggilan">Nama Panggilan</label>
+            <input type="text" id="input-panggilan" value="Memey">
+          </div>
+          <div class="form-group">
+            <label for="input-foto">Foto Profil (Pilih Foto Baru)</label>
+            <input type="file" id="input-foto" accept="image/*">
+          </div>
+          <div class="form-group">
+            <label for="input-kelas">Kelas</label>
+            <input type="text" id="input-kelas" value="X DKV 2">
+          </div>
+          <div class="form-group">
+            <label for="input-jurusan">Jurusan / Program Keahlian</label>
+            <input type="text" id="input-jurusan" value="Desain Komunikasi Visual">
+          </div>
+          <div class="form-group">
+            <label for="input-konsentrasi">Konsentrasi / Kompetensi Keahlian</label>
+            <input type="text" id="input-konsentrasi" value="KONSENTRASI/KOMPETENSI KEAHLIAN">
+          </div>
+          <div class="form-group full-width">
+            <label for="input-motto">Motto / Tagline</label>
+            <input type="text" id="input-motto" value="MOTTO/TAGLINE">
+          </div>
+          <div class="form-group full-width">
+            <label for="input-tentang">Tentang Saya</label>
+            <textarea id="input-tentang" rows="2">TENTANG SAYA</textarea>
+          </div>
+          <div class="form-group full-width">
+            <label for="input-deskripsi">Deskripsi Diri</label>
+            <textarea id="input-deskripsi" rows="3">DESKRIPSI DIRI</textarea>
+          </div>
+          <div class="form-group">
+            <label for="input-minat">Minat</label>
+            <input type="text" id="input-minat" value="MINAT">
+          </div>
+          <div class="form-group">
+            <label for="input-hobi">Hobi</label>
+            <input type="text" id="input-hobi" value="Volly">
+          </div>
+          <div class="form-group">
+            <label for="input-bidang">Bidang Ingin Dipelajari</label>
+            <input type="text" id="input-bidang" value="Komputer">
+          </div>
+          <div class="form-group">
+            <label for="input-citacita">Cita-Cita</label>
+            <input type="text" id="input-citacita" value="Guru">
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Simpan Data</button>
+          <button type="button" id="btn-reset" class="btn btn-reset">Reset Kebali</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Portofolio Siswa Kelas X SMK. Dibuat dengan Semangat Belajar.</p>
+    </div>
+  </footer>
+
+  <!-- Tombol Back to Top -->
+  <button id="back-to-top" title="Kembali ke atas">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
